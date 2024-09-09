@@ -1,0 +1,87 @@
+.navbar .logo {
+    float: none;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 1.5em;
+    text-align: center;
+}
+
+.navbar ul {
+    float: none;
+    width: 100%;
+    margin-top: 3em;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-left: 10px; 
+}
+
+.navbar ul li a {
+    float: none;
+    width: 100%;
+    font-size: 1.1em;
+}
+
+#showcase img {
+    float: none;
+    width: 100%;
+}
+
+#showcase h1 {
+    float: none;
+    width: 100%;
+}
+
+#showcase p {
+    float: none;
+    width: 100%;
+}
+
+
+
+.container {
+    display: flex;
+   flex-direction: column;
+}
+.container .item:nth-child(5) {order:3}
+.container .item:nth-child(2) {order:1}
+.container .item:nth-child(3) {order:4}
+.container .item:nth-child(1) {order:2}
+.container .item:nth-child(4) {order:5}
+
+#about h2 {
+    float: none;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    padding-bottom: 2em;
+    
+}
+
+#about p {
+    float: none;
+    width: 100%;
+    text-align: justify;
+}
+
+#trips .card {
+    float: none;
+    width: 100%;
+    margin-bottom: 3em;
+}
+
+#contact h2 {
+    margin: 0;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
+
+#contact button {
+    width: 100%;
+}
+

@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, 
+body {
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+    background:-webkit-linear-gradient(top, rgb(255, 115, 0), black);
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 3em;
+    overflow: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style: none;
+    margin-bottom: 2em;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+h2 {
+    text-transform: uppercase;
+    margin: 3em 0;
+    color: #fff;
+}
+
+h3 {
+    text-transform: uppercase;
+    margin: 3em 0;
+    color: #fff;
+}
+
+p {
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.black {
+    color: black;
+    margin-top: 2em;
+}
+
+.boton-2 {
+    background: rgb(241, 98, 46);
+    padding: 10px 50px;
+    color: #fff;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin:  0 auto;
+    text-align: center;  
+}
+
+button {
+    background: rgb(241, 98, 46);
+    padding: 10px 50px;
+    color: #fff;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin:  0 auto;
+    text-align: center;  
+}
+
+#showcase img {
+    width: 100%;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.card {
+    float: left;
+    width: 33%;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    font-size: .8rem;
+}
+
+.card:hover img {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+    .card {
+        overflow: hidden;
+    }
+}
+
+form .form-group {
+    margin-bottom: 1em;
+    color: #fff;
+}
+
+#contact .form-control {
+    display: block;
+    width: 100%;
+    background: #fff;
+}
+
+form button {
+    padding: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    background: rgb(241, 98, 46);
+    width: 100%;
+}
+
+/* navbar */
+.navbar .logo {
+    float: left;
+    margin-top: 1em;
+}
+
+.navbar ul {
+    float: right;
+    margin-top: 1em;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-top: 1.5em;
+    margin-left: .5em;
+}
+
+/* showcase */
+
+#showcase {
+    margin: 3em 0;
+}
+
+#showcase img {
+    float: right;
+    width: 40%;
+    border-radius: 2em;
+    
+}
+
+#showcase h1 {
+    float: left;
+    width: 50%;
+    font-size: 5em;
+    text-align: left;
+}
+
+#showcase p {
+    float: left;
+    width: 50%;
+    text-align: left;
+}
+
+#showcase button {
+    float: left;
+    width: 20%;
+    display: block;
+    margin-top: 3em;
+}
+
+/* about */
+#about {
+    background: #f57803;
+    padding: 3em 0;
+}
+
+#about h2 {
+    float: left;
+    width: 30%;
+    margin-top: 8em;
+}
+
+#about p {
+    float: right;
+    width: 60%;
+    text-align: right;
+    font-size: 1.8em;
+}
+
+/* trips */
+
+#trips {
+    margin-bottom: 3em;
+    text-align: center;
+}
+
+#trips img{
+    height: 250px;
+    width: 250px;
+    margin-bottom: 2em;
+    border-radius: .5em;
+}
+
+#trips .card {
+   margin-left: 2px;
+}
+
+#trips button {
+    margin: 3em 0;
+}
+
+/* contact */
+#contact {
+    background: #f57803;
+    padding: 3em 0;
+}
+
+#contact form {
+    float: right;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#contact h2 {
+    float: left;
+    width: 50%;
+    margin-top: 8em;
+}
+
+/* footer */
+#footer {
+    text-align: center;
+    padding: 3em ;
+}
