@@ -1,5 +1,5 @@
 
-export let mensaje = "madre"
+//export let mensaje = "madre"
 async function getData() {
     const result = await fetch('https://fakestoreapi.com/products/');
     const product = await result.json();
@@ -26,6 +26,8 @@ async function getData() {
         }
        }
     });
+
+    return productImage;
 
     function randonImage(min, max){
         return Math.floor(Math.random() * (max - min +1) + min)
