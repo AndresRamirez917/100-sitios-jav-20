@@ -1,5 +1,3 @@
-
-//export let mensaje = "madre"
 async function getData() {
     const result = await fetch('https://fakestoreapi.com/products/');
     const product = await result.json();
@@ -27,28 +25,50 @@ async function getData() {
        }
     });
 
-    return productImage;
-
     function randonImage(min, max){
         return Math.floor(Math.random() * (max - min +1) + min)
     }
 }
 
-async function aleatorio() {
-    const result = await fetch('https://fakestoreapi.com/products/');
-    const product = await result.json();
-    const jsonArr = product.map(elemento => Object.entries(elemento));
-   
-        const randInt = randonImage(1, jsonArr.length);
-        const ranIndex = randInt;
-        const productName = jsonArr[ranIndex][5][1];
-        function randonImage(min, max){
-            return Math.floor(Math.random() * (max - min +1) + min)
+
+const btn_validar = document.getElementById('btn-validar')
+const validar = (e) => {
+    e.preventDefault();
+    const nombre = document.getElementById('nombre');
+    const email = document.getElementById('email');
+    const mensaje= document.getElementById('mensaje');
+    const arr = [];
+    const arrMessages = ["Nombre", "Email", "Mensaje"];
+    arr.push(nombre, email, mensaje);
+    for(i = 0; i < arr.length; i++){
+        if(arr[i].value == ""){
+            swal({
+                title: `El campo ${arrMessages[i]} no puede estar vacío`,
+                icon: "error",
+                 })
+                 return false;
         }
-        console.log(productName)
+    }
+    if(!emailValido(email.value)){
+        swal({
+            title: `El campo ${arrMessages[1]} no tiene el formato correcto`,
+            icon: "error",
+             })
+             return false;
+    }
+    swal({
+        title: `Datos correctos`,
+        icon: "success",
+         })
+         nombre.value = "";
+         email.value = "";
+         mensaje.value = "";
+    return true;
 }
 
-aleatorio()
+const emailValido = email => {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+}
 
-
+btn_validar.addEventListener("click", validar)
 getData()
